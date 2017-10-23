@@ -1,0 +1,114 @@
+nav{
+	background-color: green;
+}
+
+body{
+	color:#b8b894;
+}
+
+#bannerContainer{
+	font-weight: bolder;
+	color:#4d2600;
+}
+
+#pageFooter{
+	font-size: 10px;
+	background-color: green;
+	margin-bottom: 0px;
+}
+
+#buttonIndex1{
+	background-color: green;
+}
+
+#buttonIndex2{
+	background-color: green;
+}
+
+#copyrightDiv{
+	padding-bottom: 20px;
+}
+
+#gameDescription{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 14px;
+	color:#4d2600;
+}
+
+#gameInfoDiv{
+	color:#4d2600;
+	font-size: 20px;
+}
+
+#scoreParagraph{
+	position: relative;
+	margin-left: 55px;
+	visibility: hidden;
+}
+
+#timeParagraph{
+	color:#4d2600;
+	font-size: 20px;
+	visibility: hidden;
+}
+
+#gameEventParagraph{
+	color:#4d2600;
+	font-size: 20px;
+	margin-bottom: 10px;
+	visibility: hidden;
+}
+
+#finalScoreParagraph{
+	color:#4d2600;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+titleSection{
+	color:#4d2600;
+}
+
+.logosvg{
+	width:20px;
+}
+div #image1{
+	opacity: .8;
+}
+
+div button{
+	width:150px;
+}
+
+footer{
+	min-height: 60px;
+	background-color: green;
+}
+
+footer p{
+	position: relative;
+	margin-top: 10px;
+	font-size: 10px;
+	color: white;
+}
+
+a{
+	color: #000000;
+}
+
+.footerClass{
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+#movingTimer{
+    width:20px;
+	height:20px;
+	left:0px;
+	margin-bottom: 10px;
+	background:rgba(86,191,112,0.8);
+	position:relative;
+	visibility: hidden;
+}
