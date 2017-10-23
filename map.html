@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" href="images/favicon_32.png" sizes="32x32">
+  <title>RecycleBots, Inc.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/mapStyles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+  <body>
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo"><img class="logosvg" src="images/logo2.svg" alt="logo"> RecycleBots</a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a class="nav" href="index.html">Home</a></li>
+          <li><a class="nav" href="projcatalog.php">Store</a></li>
+          <li><a class="nav" href="main_forum.php">Forum</a></li>
+          <li><a class="nav" href="game.html">Fun</a></li>
+          <li><a class="nav" href="map.html">Map</a></li>
+	  <li><a class="nav" href="username.html">Join Now</a></li>
+        </ul>
+
+        <!-- For Mobile responsiveness  -->
+        <ul id="nav-mobile" class="side-nav">
+          <li><a class="nav" href="index.html">Home</a></li>
+          <li><a class="nav" href="projcatalog.php">Store</a></li>
+          <li><a class="nav" href="main_forum.php">Forum</a></li>
+          <li><a class="nav" href="index.html">Fun</a></li> <!-- Game cannot be played on a phone -->
+          <li><a class="nav" href="map.html">Map</a></li>
+	  <li><a class="nav" href="username.html">Join Now</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <h5 class="header center">Find a Recycle Center near you.</h5>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+
+    <footer id="pageFooter" class="page-footer">
+    <div class="container">
+      <div class="row" id>
+        <div class="col s12 center white-text">
+          <h5>Contact Us</h5>
+          <p>
+            To get in contact with us through email. Click on the clickable links on the bottom of this page to email us.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" id="copyrightDiv">
+      <div class="container center">
+        <p>Webmasters:
+          <a href="mailto:ctnguyen@scu.edu">Christen Nguyen</a> and <a href="mailto:jpatel@scu.edu">Jimmy Patel</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8wDkKNOEcq1b-y7CRrkLet3CFKpTS-fk&libraries=places&callback=initAutocomplete"
+         async defer></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/init.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html
