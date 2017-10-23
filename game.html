@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" href="images/favicon_32.png" sizes="32x32">
+  <title>RecycleBots, Inc.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img class="logosvg" src="images/logo2.svg" alt="logo">  RecycleBots</a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="projcatalog.php">Store</a></li>
+        <li><a class="nav" href="main_forum.php">Forum</a></li>
+        <li><a class="nav" href="game.html">Fun</a></li>
+        <li><a class="nav" href="map.html">Map</a></li>
+	<li><a class="nav" href="username.html">Join Now</a></li>
+      </ul>
+
+      <!-- For Mobile responsiveness  -->
+      <ul id="nav-mobile" class="side-nav">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="projcatalog.php">Store</a></li>
+        <li><a class="nav" href="main_forum.php">Forum</a></li>
+        <li><a class="nav" href="index.html">Fun</a></li>
+        <li><a class="nav" href="map.html">Map</a></li>
+	<li><a class="nav" href="username.html">Join Now</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+
+  <section id="titleSection">
+    <h4 class="center">Recycling Game</h4>
+  </section>
+  
+  <div class="row  center">
+    <div class="col s2">
+      <div id="gameInfoDiv">
+        <p id="scoreParagraph">
+          Score: 0
+        </p>
+      </div>
+    </div>
+    <div class="col s8">
+      <p id="finalScoreParagraph">
+         <!-- This is where the game will let the user if an item is picked up, user was correct, or user was not correct, JS will update this -->
+      </p>
+      <div id="gameContainer">
+        <!-- JAVASCRIPT GAME WILL BE APPENDED HERE AFTER BODY LOADS!-->
+        <!-- JQUERY WILL CHANGE ITS VISIBILITY> !-->
+        <div id="movingTimer">
+          <!-- This is the animation timer, it moves from left to right in 60 seconds !-->
+        </div>
+      </div>
+      <p id="gameEventParagraph">
+         <!-- This is where the game will let the user if an item is picked up, user was correct, or user was not correct, JS will update this -->
+         Game Started
+      </p>
+      <br/>
+      <button class="btn waves-effect green" onclick="startGame()">Start</button>
+      <button class="btn waves-effect green" onclick="stopGame()">Stop</button>
+      
+    </div>
+    <div class="col s2">
+        <p id="timeParagraph">
+          <!-- This is where the game will display the time spent in the game. JS will update this.-->
+          Time: 0
+        </p>
+    </div>
+  </div>
+  <div class="section center" id="gameDescription">
+      <h5>How to play</h5>
+      <p>
+        What is recyclable and what is not? Click on the start button to test your knowledge. Use the WASD keys on your keyboard to move the Earth Dude and pick
+        up the item that appears on the screen. Your task is to determine what item goes in which bin and move Earth Dude to the correct bin. There is a recycling
+        bin on the bottom-left and a trash-bin on the bottom right.
+        So if you pick up an aluminum can, you should move Earth Dude to the recycling bin You get a point for
+        adding an item to the correct bin and you lose a point for adding it to the incorrect bin. Get the highest score before within 60 Seconds or
+        press the stop button to end the game.
+      </p>
+  </div>
+  
+
+  <footer id="pageFooter" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center white-text">
+          <h5>Contact Us</h5>
+          <p>
+            To get in contact with us through email. Click on the clickable links on the bottom of this page to email us.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" id="copyrightDiv">
+      <div class="container center">
+        <p>Webmasters:
+          <a href="mailto:ctnguyen@scu.edu">Christen Nguyen</a> and <a href="mailto:jpatel@scu.edu">Jimmy Patel</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.js"></script>
+  <script src="materialize/js/init.js"></script>
+  <script src="js/gamescript.js"></script>
+</body>
+</html>
